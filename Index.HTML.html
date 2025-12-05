@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <title>Promask AB – Grafisk profil</title>
+
+  <style>
+
+    /* ===========================
+       1. FÄRGER
+    ============================ */
+    :root {
+      --color-primary: #0A0A0C;
+      --color-secondary: #F5F5F5;
+      --color-accent: #0074D9;
+      --color-text: #202020;
+      --color-bg: #FFFFFF;
+
+      /* CTA-specifik färgsättning (från bilden du gav) */
+      --promask-blue: #0074FF;
+      --promask-blue-dark: #005FD1;
+      --promask-blue-glow: rgba(0, 116, 255, 0.35);
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: var(--color-primary);
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+
+    h3 {
+      color: var(--color-primary);
+      border-bottom: 2px solid var(--color-primary);
+      padding-bottom: 4px;
+      margin-top: 40px;
+    }
+
+    /* Tabeller */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #CCC;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    .color-block {
+      width: 60px;
+      height: 20px;
+      display: inline-block;
+      border: 1px solid #AAA;
+    }
+
+    /* ===========================
+       2. CTA-KNAPP – PROMASK-STIL
+    ============================ */
+    .cta-promask {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 12px 34px;
+      border-radius: 6px;
+
+      font-weight: 700;
+      font-size: 1rem;
+
+      color: #ffffff;
+      text-decoration: none;
+      background-color: var(--promask-blue);
+
+      transition: 150ms ease;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+
+    .cta-promask:hover {
+      background-color: var(--promask-blue-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.22),
+                  0 0 18px 4px var(--promask-blue-glow);
+    }
+
+    .cta-promask:active {
+      transform: scale(0.98);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.26);
+    }
+
+    /* Mörk bakgrundsblock för visning */
+    .dark-block {
+      background-color: #0A0A0C;
+      padding: 30px;
+      border-radius: 6px;
+      margin-top: 20px;
+      color: white;
+    }
+
+    footer .note {
+      color: #666;
+      font-size: 0.9em;
+      font-style: italic;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Promask AB</h1>
+  <h2>Grafisk profil</h2>
+</header>
+
+<section>
+  <h3>1. Logotyp</h3>
+  <p>Huvudlogotyp / alternativ logotyp / monokrom / negativ version.</p>
+
+  <img src="https://admin.abicart.se/shop/ws55/51155/files/Promask-Byline-bla%CC%8A-Web.jpg?max-width=1200&max-height=240&quality=85&fmt=avif" width="300">
+  <img src="https://florbal4u.s15.cdn-upgates.com/_cache/3/1/31b1bf862837e8e7be532508db35bee4-promask.jpg" width="300">
+  <img src="https://img.myshopline.com/image/store/1738946381940/Promask-logo-1200x1200.jpeg?w=1200&h=1200" width="200">
+  <img src="https://media.licdn.com/dms/image/v2/D4D22AQF3isG049I2UA/feedshare-shrink_800/feedshare-shrink_800/0/1700849191453?e=2147483647&v=beta&t=p7mQKM3VOq06dP3gfIpC8yynilxu1UwBitKJ27KwNeM" width="300">
+</section>
+
+
+<section>
+  <h3>2. Färgpalett</h3>
+
+  <table>
+    <thead>
+      <tr><th>Namn</th><th>Färg</th><th>HEX</th><th>Användning</th></tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>Primär färg – Primary Black</td>
+        <td><span class="color-block" style="background-color:#0A0A0C;"></span></td>
+        <td>#0A0A0C</td>
+        <td>Rubriker, logotyp, huvudgrafik</td>
+      </tr>
+
+      <tr>
+        <td>Primär färg – Primary Steel</td>
+        <td><span class="color-block" style="background-color:#51565A;"></span></td>
+        <td>#51565A</td>
+        <td>UI-element, ikonografi, linjer</td>
+      </tr>
+
+      <tr>
+        <td>Sekundär färg – Secondary Light</td>
+        <td><span class="color-block" style="background-color:#E6E8EB;"></span></td>
+        <td>#E6E8EB</td>
+        <td>Bakgrundspaneler, neutrala ytor</td>
+      </tr>
+
+      <tr>
+        <td>Sekundär färg – Neutral White</td>
+        <td><span class="color-block" style="background-color:#FFFFFF;"></span></td>
+        <td>#FFFFFF</td>
+        <td>Bakgrund, ren produktpresentation</td>
+      </tr>
+
+      <tr>
+        <td>Accentfärg – Action Blue</td>
+        <td><span class="color-block" style="background-color:#0074D9;"></span></td>
+        <td>#0074D9</td>
+        <td>Knappar, CTA, länkar</td>
+      </tr>
+
+      <tr>
+        <td>Accentfärg – Highlight Orange</td>
+        <td><span class="color-block" style="background-color:#FF6A00;"></span></td>
+        <td>#FF6A00</td>
+        <td>Viktiga markeringar</td>
+      </tr>
+
+    </tbody>
+  </table>
+</section>
+
+
+<section>
+  <h3>3. Typografi</h3>
+  <p>
+    <strong>Rubriker:</strong> Sans-serif, bold eller semibold<br>
+    <strong>Brödtext:</strong> 16px (webb) / 10–12pt (print)<br>
+    <strong>Fallback:</strong> Arial, Helvetica, sans-serif
+  </p>
+</section>
+
+
+<section>
+  <h3>4. Exempel på CTA-knapp</h3>
+
+  <a href="#" class="cta-promask">Köp nu / Call-to-action</a>
+
+  <div class="dark-block">
+    <h4>Mörk bakgrund – visning</h4>
+    <a href="#" class="cta-promask">Köp nu</a>
+  </div>
+</section>
+
+
+<section>
+  <h3>5. Bildspråk</h3>
+  <p>Professionella produktbilder, mörka arenamiljöer, teknisk känsla.</p>
+</section>
+
+<section class="video-section">
+  <div class="video-container">
+    <h2>Produktvideo</h2>
+
+    <div class="video-wrapper">
+      <video controls>
+        <source src="Video.mp4" type="video/mp4">
+        Din webbläsare stödjer inte videouppspelning.
+      </video>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>6. Digital & Tryck</h3>
+  <ul>
+    <li>Webb: tydliga rubriker, CTA-knappar, god kontrast.</li>
+    <li>Sociala medier: konsekvent färg och tonalitet.</li>
+    <li>Tryck: använd profilfärger och tydlig typografi.</li>
+  </ul>
+</section>
+
+<footer>
+  <p class="note">Denna fil sparar Promasks visuella riktlinjer.</p>
+</footer>
+
+</body>
+</html>
